@@ -1,0 +1,32 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "icons/16-icon.png",
+         "32": "icons/32-icon.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "service-worker.js"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "<all_urls>" ]
+   } ],
+   "description": "Adds Markiplier's face to every videos on any webpage.",
+   "icons": {
+      "128": "icons/128-icon.png",
+      "16": "icons/16-icon.png",
+      "32": "icons/32-icon.png",
+      "48": "icons/48-icon.png"
+   },
+   "manifest_version": 3,
+   "name": "Markiplier",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0",
+   "web_accessible_resources": [ {
+      "matches": [ "<all_urls>" ],
+      "resources": [ "images/mark.png" ]
+   } ]
+}
